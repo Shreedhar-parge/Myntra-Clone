@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="p-3 mb-3 border-bottom fixed-top bg-light">
+        <div class="container" style="max-width: 1450px;">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <!-- <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="https://cdn.worldvectorlogo.com/logos/myntra-2.svg"></use></svg>
+            </a> -->
+                <a href="file:///D:/JFSJD%20HTML/Myntra/index.html?#carouselExampleIndicators"><img width="50vw"
+                        height="42vw" src="https://cdn.worldvectorlogo.com/logos/myntra-2.svg"></a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+                    style="padding-left: 50px; font-size: 14px; font-weight:600;">
+                    <li><a href="https://www.myntra.com/shop/men" class="nav-link  link-body-emphasis">MEN</a></li>
+                    <li><a href="https://www.myntra.com/shop/women" class="nav-link link-body-emphasis">WOMEN</a></li>
+                    <li><a href="https://www.myntra.com/shop/kids" class="nav-link link-body-emphasis">KIDS</a></li>
+                    <li><a href="https://www.myntra.com/shop/home-living" class="nav-link link-body-emphasis">HOME &
+                            LIVING</a></li>
+                    <li><a href="https://www.myntra.com/personal-care" class="nav-link link-body-emphasis">BEAUTY</a>
+                    </li>
+                    <li><a href="https://www.myntra.com/studio/home" class="nav-link link-body-emphasis">STUDIO</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" style="width:25vw;"
+                        placeholder="Search for products, brands and more" aria-label="Search">
+                </form>
+
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+                    style="font-size: small; font-weight: 600;">
+                    <li>
+                        <a href="https://www.myntra.com/login?referer=https://www.myntra.com/"
+                            class="nav-link text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-person d-block mx-auto" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.myntra.com/wishlist" class="nav-link text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-heart d-block mx-auto" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.myntra.com/checkout/cart" class="nav-link text-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-handbag d-block mx-auto" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z" />
+                            </svg>
+                            Bag
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- image content -->
+    <div class="container second">
+        <a href="https://www.myntra.com/shop/men"><img src="assets/first.png" alt="img" class="poster"></a>
+        <a href="https://www.myntra.com/online-fashion-store"><img src="assets/second.png" alt="img coupen"
+                class="poster"></a>
+    </div>
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.myntra.com/womens-western-wear?f=Brand%3ACHIC%20BY%20TOKYO%20TALKIES%2CKETCH%2CPink%20Paprika%20by%20SASSAFRAS%2CSASSAFRAS%2CSASSAFRAS%20BASICS%2CSASSAFRAS%20Curve%2CSASSAFRAS%20alt-laze%2CSASSAFRAS%20worklyf%2CTokyo%20Talkies&rf=Discount%20Range%3A70.0_100.0_70.0%20TO%20100.0&sort=recommended"><img src="assets/carousel1.png" class="d-block w-100" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.myntra.com/footwear?f=Brand%3AADIDAS&rawQuery=footwear&rf=Discount%20Range%3A50.0_100.0_50.0%20TO%20100.0"><img src="assets/carousel2.png" class="d-block w-100" alt="Second slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.myntra.com/mens-apparel?f=Brand%3AALCOTT%2CBRAVE%20SOUL%2CBeverly%20Hills%20Polo%20Club%2CDeFacto%2CGANT%2CH%26M%2CKoton%2CLC%20Waikiki%2CMANGO%20MAN%2CNEXT%2CTrendyol%2CTrue%20Religion%2CboohooMAN%2Ccatch%3A%3ACategories%3AShirts%2CShorts%2CTrousers%2CTshirts&rawQuery=mens%20apparel&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0%3A%3APrice%3A399.0_25000.0_399.0%20TO%2025000.0"><img src="assets/carousel3.png" class="d-block w-100" alt="Third slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.myntra.com/mens-apparel?f=Brand%3AAllen%20Solly%2CAllen%20Solly%20Sport%2CAllen%20Solly%20Tribe%2CArrow%2CArrow%20New%20York%2CArrow%20Sport%2CBlackberrys%2CColorPlus%2CDENNISON%2CEthnix%20by%20Raymond%2CFUBAR%2CHancock%2CINVICTUS%2CLouis%20Philippe%2CLouis%20Philippe%20Ath.Work%2CLouis%20Philippe%20Jeans%2CLouis%20Philippe%20Sport%2CLuxure%20by%20Louis%20Philippe%2CPark%20Avenue%2CRay"><img src="assets/carousel4.png" class="d-block w-100" alt="Fourth slide"></a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- cards -->
+    <img src="assets/shop by category.png" alt="title" class="poster">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-nehru-jackets?rf=Price%3A09.0_749.0_09.0%20TO%20749.0"><img
+                            class="card-img-top" src="assets/card1.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-blazers?rf=Price%3A09.0_1799.0_09.0%20TO%201799.0"><img
+                            class="card-img-top" src="assets/card2.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-kurta-sets?rf=Price%3A09.0_899.0_09.0%20TO%20899.0"><img
+                            class="card-img-top" src="assets/card3.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-kurtas?rf=Price%3A09.0_499.0_09.0%20TO%20499.0"><img
+                            class="card-img-top" src="assets/card4.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-shorts?rf=Price%3A09.0_399.0_09.0%20TO%20399.0"><img
+                            class="card-img-top" src="assets/card5.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-track-pants?rf=Price%3A09.0_399.0_09.0%20TO%20399.0"><img
+                            class="card-img-top" src="assets/card6.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-palazzos?rf=Price%3A09.0_299.0_09.0%20TO%20299.0"><img
+                            class="card-img-top" src="assets/card7.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-kurtis?rf=Price%3A09.0_399.0_09.0%20TO%20399.0"><img
+                            class="card-img-top" src="assets/card8.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-jumpsuit?rf=Price%3A09.0_599.0_09.0%20TO%20599.0"><img
+                            class="card-img-top" src="assets/card9.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-shorts?rf=Price%3A09.0_299.0_09.0%20TO%20299.0"><img
+                            class="card-img-top" src="assets/card10.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-skirts?rf=Price%3A09.0_399.0_09.0%20TO%20399.0"><img
+                            class="card-img-top" src="assets/card11.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-co-ords?rf=Price%3A09.0_699.0_09.0%20TO%20699.0"><img
+                            class="card-img-top" src="assets/card12.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a
+                        href="https://www.myntra.com/beauty-page-skincare-bath-body?f=Categories%3ABody%20Cream%20and%20Lotion&sort=popularity"><img
+                            class="card-img-top" src="assets/card13.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/serum?f=Categories%3ASerum%20and%20Gel&sort=popularity"><img
+                            class="card-img-top" src="assets/card14.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/sunscreen?f=Categories%3AFace%20Sunscreen&sort=popularity"><img
+                            class="card-img-top" src="assets/card15.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a
+                        href="https://www.myntra.com/beauty-page-skincare-bath-body?f=Categories%3ABody%20Wax%20and%20Essentials&sort=popularity"><img
+                            class="card-img-top" src="assets/card16.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/mascara?sort=popularity"><img class="card-img-top"
+                            src="assets/card17.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/kajal?sort=popularity"><img class="card-img-top"
+                            src="assets/card18.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-boots?rf=Price:09.0_999.0_09.0%20TO%20999.0"><img
+                            class="card-img-top" src="assets/card19.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/sports-shoes?rf=Price%3A09.0_1099.0_09.0%20TO%201099.0"><img
+                            class="card-img-top" src="assets/card20.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-casual-shoes?rf=Price:09.0_799.0_09.0%20TO%20799.0"><img
+                            class="card-img-top" src="assets/card21.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-heels?rf=Price:09.0_549.0_09.0%20TO%20549.0"><img
+                            class="card-img-top" src="assets/card22.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/women-flats?rf=Price:09.0_399.0_09.0%20TO%20399.0"><img
+                            class="card-img-top" src="assets/card23.png" alt="Card image cap"></a>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 mb-4">
+                <div class="card" style="width: 100%;">
+                    <a href="https://www.myntra.com/men-boots?rf=Price:09.0_1399.0_09.0%20TO%201399.0"><img
+                            class="card-img-top" src="assets/card24.png" alt="Card image cap"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last">
+        <a href="https://apps.apple.com/in/app/myntra-fashion-shopping-app/id907394059?mt=8"><img class="download"
+                src="assets/download.png" alt="download image"></a>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+                <a href="file:///D:/JFSJD%20HTML/Myntra/index.html?#carouselExampleIndicators"><img width="50vw"
+                    height="42vw" src="https://cdn.worldvectorlogo.com/logos/myntra-2.svg"></a>
+                <p class="text-muted">© 2024 Shreedhar Parge</p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>ONLINE SHOPPING</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/shop/men" class="nav-link p-0 text-muted">Men</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/shop/women" class="nav-link p-0 text-muted">Women</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/shop/kids" class="nav-link p-0 text-muted">Kids</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/shop/home-living" class="nav-link p-0 text-muted">Home & Living</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/personal-care" class="nav-link p-0 text-muted">Beauty</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>CUSTOMER POLICIES</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/contactus" class="nav-link p-0 text-muted">Contact Us</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/faqs" class="nav-link p-0 text-muted">FAQ</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/tac" class="nav-link p-0 text-muted">T&C</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/termsofuse" class="nav-link p-0 text-muted">Terms of Use</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/login?referer=https%3A%2F%2Fwww.myntra.com%2Fmy%2Forders" class="nav-link p-0 text-muted">Track orders</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>USEFUL LINKS</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://blog.myntra.com/" class="nav-link p-0 text-muted">Blog</a></li>
+                    <li class="nav-item mb-2"><a href="https://careers.myntra.com/" class="nav-link p-0 text-muted">Careers</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/sitemap" class="nav-link p-0 text-muted">Site Map</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/corp-info" class="nav-link p-0 text-muted">Corporate Information</a></li>
+                    <li class="nav-item mb-2"><a href="https://www.myntra.com/security/whitehat" class="nav-link p-0 text-muted">Whitehat</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
